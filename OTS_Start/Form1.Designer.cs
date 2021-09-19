@@ -59,6 +59,7 @@
             this.slbl_date = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -492,6 +493,7 @@
         private System.Windows.Forms.Label slbl_date;
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Timer timer1;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
     }
 }
 

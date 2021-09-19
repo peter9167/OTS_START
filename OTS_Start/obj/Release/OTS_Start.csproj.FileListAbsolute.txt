@@ -1,0 +1,8 @@
+C:\Users\peter\OneDrive\문서\Visual Studio 2008\Projects\OTS_Start\OTS_Start\bin\Release\OTS_Start.exe
+C:\Users\peter\OneDrive\문서\Visual Studio 2008\Projects\OTS_Start\OTS_Start\bin\Release\OTS_Start.pdb
+C:\Users\peter\OneDrive\문서\Visual Studio 2008\Projects\OTS_Start\OTS_Start\obj\Release\ResolveAssemblyReference.cache
+C:\Users\peter\OneDrive\문서\Visual Studio 2008\Projects\OTS_Start\OTS_Start\obj\Release\OTS_Start.Form1.resources
+C:\Users\peter\OneDrive\문서\Visual Studio 2008\Projects\OTS_Start\OTS_Start\obj\Release\OTS_Start.Properties.Resources.resources
+C:\Users\peter\OneDrive\문서\Visual Studio 2008\Projects\OTS_Start\OTS_Start\obj\Release\OTS_Start.csproj.GenerateResource.Cache
+C:\Users\peter\OneDrive\문서\Visual Studio 2008\Projects\OTS_Start\OTS_Start\obj\Release\OTS_Start.exe
+C:\Users\peter\OneDrive\문서\Visual Studio 2008\Projects\OTS_Start\OTS_Start\obj\Release\OTS_Start.pdb

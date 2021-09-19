@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.IO.Ports;
+using System.Timers;
 
 namespace OTS_Start
 {
@@ -18,7 +19,7 @@ namespace OTS_Start
             InitializeComponent();
             
 
-            serialPort1.PortName = "COM3";
+            serialPort1.PortName = "COM11";
             serialPort1.Open();
         }
 
@@ -30,7 +31,7 @@ namespace OTS_Start
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1_Tick(sender, e);
-            timer1.Interval = 500; //스케쥴 간격을 5초로 준 것이다.
+            timer1.Interval = 500; //스케쥴 간격을 0.5초로 준 것이다.
             timer1.Start(); //타이머를 발동시킨다.
         }
 
@@ -64,16 +65,33 @@ namespace OTS_Start
         {
             
         }
+        private void Temp_Print()
+        {
+            string rawdata = serialPort1.ReadLine();
+            string[] data = rawdata.Split(',');
+            TempVal.Text = data[0] + "'c";
+        }
+
+        private void Hum_Print()
+        {
+            string rawdata = serialPort1.ReadLine();
+            string[] data = rawdata.Split(',');
+            HumVal.Text = data[1] + "%";
+        }
+
+        private void slbl_date_Print()
+        {
+            string nowTime = DateTime.Now.ToString();
+
+            slbl_date.Text = nowTime;
+            
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            string rawdata = serialPort1.ReadLine();
-
-            string[] data = rawdata.Split(',');
-            string nowTime = DateTime.Now.ToString();
-            TempVal.Text = data[0] + "'c";
-            HumVal.Text = data[1] + "%";
-            slbl_date.Text = nowTime;
+            slbl_date_Print();
+            Temp_Print();
+            Hum_Print();
         }
     }
 }
