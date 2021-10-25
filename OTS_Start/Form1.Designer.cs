@@ -150,15 +150,14 @@
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Headline R", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label6.Location = new System.Drawing.Point(18, 257);
             this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(69, 5, 69, 5);
             this.label6.Size = new System.Drawing.Size(164, 34);
             this.label6.TabIndex = 5;
-            this.label6.Text = "0";
+            this.label6.Text = "23.6\'c";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HumVal
             // 
@@ -170,7 +169,7 @@
             this.HumVal.Name = "HumVal";
             this.HumVal.Size = new System.Drawing.Size(164, 34);
             this.HumVal.TabIndex = 4;
-            this.HumVal.Text = "0";
+            this.HumVal.Text = "62.3%";
             this.HumVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.HumVal.Click += new System.EventHandler(this.HumVal_Click);
             // 
@@ -210,7 +209,7 @@
             this.TempVal.Name = "TempVal";
             this.TempVal.Size = new System.Drawing.Size(164, 34);
             this.TempVal.TabIndex = 1;
-            this.TempVal.Text = "0";
+            this.TempVal.Text = "22.6\'c";
             this.TempVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TempVal.Click += new System.EventHandler(this.TempVal_Click);
             // 
@@ -416,7 +415,7 @@
             this.slbl_date.Name = "slbl_date";
             this.slbl_date.Size = new System.Drawing.Size(413, 42);
             this.slbl_date.TabIndex = 19;
-            this.slbl_date.Text = "0";
+            this.slbl_date.Text = "2021-10-19 19h";
             this.slbl_date.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.slbl_date.Click += new System.EventHandler(this.slbl_date_Click);
             // 

@@ -19,8 +19,8 @@ namespace OTS_Start
             InitializeComponent();
             
 
-            serialPort1.PortName = "COM11";
-            serialPort1.Open();
+            //serialPort1.PortName = "COM7";
+            //serialPort1.Open();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -47,18 +47,18 @@ namespace OTS_Start
 
         private void TempVal_Click(object sender, EventArgs e)
         {
-                string rawdata = serialPort1.ReadLine();
+                //string rawdata = serialPort1.ReadLine();
 
-                string[] data = rawdata.Split(',');
-                TempVal.Text = data[0] + "'c";
+                //string[] data = rawdata.Split(',');
+                //TempVal.Text = data[0] + "'c";
         }
 
         private void HumVal_Click(object sender, EventArgs e)
         {
-                string rawdata = serialPort1.ReadLine();
+                //string rawdata = serialPort1.ReadLine();
 
-                string[] data = rawdata.Split(',');
-                HumVal.Text = data[1] + "%";
+                //string[] data = rawdata.Split(',');
+                //HumVal.Text = data[1] + "%";
         }
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -67,31 +67,31 @@ namespace OTS_Start
         }
         private void Temp_Print()
         {
-            string rawdata = serialPort1.ReadLine();
-            string[] data = rawdata.Split(',');
-            TempVal.Text = data[0] + "'c";
+            //string rawdata = serialPort1.ReadLine();
+            //string[] data = rawdata.Split(',');
+            //TempVal.Text = data[0] + "'c";
         }
 
         private void Hum_Print()
         {
-            string rawdata = serialPort1.ReadLine();
-            string[] data = rawdata.Split(',');
-            HumVal.Text = data[1] + "%";
+            //string rawdata = serialPort1.ReadLine();
+            //string[] data = rawdata.Split(',');
+            //HumVal.Text = data[1] + "%";
         }
 
         private void slbl_date_Print()
         {
-            string nowTime = DateTime.Now.ToString();
+            //string nowTime = DateTime.Now.ToString();
 
-            slbl_date.Text = nowTime;
+            //slbl_date.Text = nowTime;
             
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            slbl_date_Print();
-            Temp_Print();
-            Hum_Print();
+            //slbl_date_Print();
+            //Temp_Print();
+            //Hum_Print();
         }
     }
 }
